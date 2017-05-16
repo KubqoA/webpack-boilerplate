@@ -1,4 +1,4 @@
-## Webpack Boiler Plate
+## Webpack Boilerplate
 
 Prepared configuration for Webpack 2 for fast web development using the latest compiling tools.
 
@@ -9,6 +9,11 @@ The goal of this project is to provide simple and reliable boilerplate for creat
 ## Installation
 
 To install it just simply clone this repository and then enter the folder.
+```
+git clone https://github.com/KubqoA/webpack-boilerplate.git
+cd webpack-boilerplate/
+```
+
 Then you need to install all the npm dependencies, to do so you can use _yarn_ or classic _npm_.
 
 **Using yarn:**
@@ -19,6 +24,30 @@ yarn install
 **Using npm:**
 ```
 npm install
+```
+
+There are a few already prepacked scripts, there is a script for **production** (compile the assets and minify them), for **development** (compile the assets without minifying), and for creating a _webpack-dev-server_ running on localhost on port 9000 and serving from the dist directory.
+
+When compiling the outputs are stored in the **dist** directory. The outputs are:
+* app.css
+* app.css.map (when using production)
+* app.js
+* app.js.map (when using production)
+
+To run the scripts use following commmands:
+```
+Production:
+npm run-script production
+or
+npm run-script prod
+
+Development:
+npm run-script development
+or
+npm run-script dev
+
+webpack-dev-server:
+npm-run script watch
 ```
 
 ## License
